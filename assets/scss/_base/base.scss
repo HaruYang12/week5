@@ -8,6 +8,9 @@ a{
     display: inline-block;
 }
 
+li{
+    list-style: none;
+}
 code{
     font-family: "Roboto Mono", monospace;
     color: $success;
