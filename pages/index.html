@@ -18,40 +18,41 @@
     <%- include('./layout/header', {page: 'assignment' }); -%>
       <main class="px-4  content">
         <header>
-          <nav class="navbar navbar-expand-lg justify-content-between">
+          <nav class="navbar navbar-expand-lg w-100 d-flex align-items-center mt-4">
             <div class="container-fluid">
-              <h1 class="navbar-brand fw-bold">Assignment</h1>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
-                <ul class="navbar-nav">
-                  <li class="nav-item dropdown">
-                    <a class="nav-link" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown"
-                      aria-expanded="false">
-                      <div class="d-flex pt-2 w-100">
-                        <span class="text-dark">All Course</span>
-                        <span class="material-icons text-success ps-2">
-                          expand_more</span>
-                        </span>
-                      </div>
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDarkDropdownMenuLink">
-                      <li><a class="dropdown-item" href="#">HTML</a></li>
-                      <li><a class="dropdown-item" href="#">CSS</a></li>
-                      <li><a class="dropdown-item" href="#">SCSS</a></li>
-                    </ul>
+              <div class="d-flex align-items-center">
+                <h1 class="navbar-brand fw-bold">Assignment</h1>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false"
+                  aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                  <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                      <a class="nav-link" href="#" id="navbarDarkDropdownMenuLink" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <div class="d-flex">
+                          <span class="text-dark">All Course</span>
+                          <span class="material-icons text-success ps-2">
+                            expand_more</span>
+                        </div>
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="navbarDarkDropdownMenuLink">
+                        <li><a class="dropdown-item" href="#">HTML</a></li>
+                        <li><a class="dropdown-item" href="#">CSS</a></li>
+                        <li><a class="dropdown-item" href="#">SCSS</a></li>
+                      </ul>
+                </div>
               </div>
             </div>
             <div class="d-flex">
-              <span class="material-symbols-outlined me-4">search</span>
-              <span class="material-icons">notifications_active</span>
+              <a href="#"><span class="material-symbols-outlined me-4">search</span></a>
+              <a href="#"><span class="material-icons">notifications_active</span></a>
             </div>
           </nav>
         </header>
-        <div class="dropdown">
+        <div class="dropdown d-flex justify-content-between">
           <button class="btn" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
             <div class="d-flex">
               <span>All(4)</span><span class="text-success ps-2">
@@ -66,6 +67,7 @@
             <li><button class="dropdown-item" type="button">three</button></li>
             <li><button class="dropdown-item" type="button">four</button></li>
           </ul>
+          <small class="text-secondary">2 comments</small>
         </div>
         <div class="d-flex">
           <div class="list-group me-3 w-100">
@@ -140,7 +142,11 @@
                       <code>img</code> ? There is a gap below the image, but it doesn’t seems to be a padding/margin.
                       What is the gap or extra space below image?
                     </p>
-                    <a href="#" class="btn btn-light" download>HW-2-David.zip</a>
+                    <a href="#" class="btn btn-light border-secondary" download>
+                      <span class="material-symbols-outlined align-middle">
+                        attach_file</span>
+                      <span class="align-middle">HW-2-David.zip</span>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -180,59 +186,7 @@
                   </div>
                 </div>
               </div>
-              <div class="collapse position-absolute bottom-0 end-0 w-100" id="collapseExample">
-                <div class="card card-body align-items-end">
-                  <div class="card-header d-flex align-items-center">
-                    <div class="dropdown">
-                      <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton1"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        Body text
-                      </button>
-                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                        <li><a class="dropdown-item" href="#">h1</a></li>
-                        <li><a class="dropdown-item" href="#">h2</a></li>
-                        <li><a class="dropdown-item" href="#">h3</a></li>
-                      </ul>
-                    </div>
-                    <span class="material-symbols-outlined">
-                      format_bold
-                    </span>
-                    <span class="material-symbols-outlined">
-                      format_italic
-                    </span>
-                    <span class="material-symbols-outlined">
-                      list
-                    </span>
-                    <span class="material-symbols-outlined">
-                      format_list_numbered
-                    </span>
-                    <span class="material-symbols-outlined">
-                      image
-                    </span>
-                    <span class="material-symbols-outlined">
-                      link
-                    </span>
-                    <span class="material-symbols-outlined">
-                      code
-                    </span>
-                  </div>
-                  <div class="card-body">
-                    <blockquote class="blockquote">
-                      <p class="ass_color">Reply an answer…</p>
-                    </blockquote>
-                  </div>
-                  <div class="d-flex">
-                    <button class="btn btn-outline-success" type="button" data-bs-toggle="collapse"
-                      data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                      Cancel
-                    </button>
-                    <button class="btn btn-success" type="button" data-bs-toggle="collapse"
-                      data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                      Reply
-                    </button>
-                  </div>
-                </div>
-              </div>
+
             </div>
             <div class="d-flex justify-content-end position-relative">
               <button class="btn btn-outline-success">Mark as read</button>
@@ -248,7 +202,57 @@
                     chevron_right
                   </span></a>
               </div>
-
+              <div class="collapse position-absolute bottom-0 end-0 w-100" id="collapseExample">
+                <div class="card card-body">
+                  <div class="card-header w-100 d-flex align-items-center">
+                    <div class="dropdown">
+                      <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Body text
+                      </button>
+                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="#">h1</a></li>
+                        <li><a class="dropdown-item" href="#">h2</a></li>
+                        <li><a class="dropdown-item" href="#">h3</a></li>
+                      </ul>
+                    </div>
+                    <span class="material-symbols-outlined m-2">
+                      format_bold
+                    </span>
+                    <span class="material-symbols-outlined">
+                      format_italic
+                    </span>
+                    <span class="material-symbols-outlined mx-4">
+                      list
+                    </span>
+                    <span class="material-symbols-outlined">
+                      format_list_numbered
+                    </span>
+                    <span class="material-symbols-outlined mx-4">
+                      image
+                    </span>
+                    <span class="material-symbols-outlined">
+                      link
+                    </span>
+                    <span class="material-symbols-outlined mx-4">
+                      code
+                    </span>
+                  </div>
+                  <div class="card-body align-items-start">
+                    <p class="ass_color">Reply an answer…</p>
+                  </div>
+                  <div class="d-flex w-100 justify-content-end">
+                    <button class="btn btn-outline-success" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                      Cancel
+                    </button>
+                    <button class="btn btn-success" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                      Reply
+                    </button>
+                  </div>
+                </div>
+              </div>
             </div>
       </main>
   </div>
